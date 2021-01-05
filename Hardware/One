@@ -1,0 +1,17 @@
+CPU -> Control Unit, ALU, Memory
+
+Control Unit -> Controls the operations of all parts of a computer. It obtains instructions from memory and directs the operation of the computer.
+It converts user input (ie from keyboard) and send them to ALU. Uses clock inputs (measured in megahertz) to maintain sequence of data.
+
+ALU -> Carries out arithmetic (math) and logic (AND OR NOT) operations.
+
+Memory Unit -> Stores data. AKA primary memory or RAM. Secondary memory are like ROM, Memory card and Hard disk.
+
+################## 1/4/2021 ############################################################################################################
+
+Crash Course 5
+An overflow is when the result of an addition is too large to be represented by the number of bits you are using.
+For 8-bits ALU : inputs and outputs are 8 bits, operation code is 4 bits, and flags (ie overflow, zero, or negative) are 1 bit
+
+
+

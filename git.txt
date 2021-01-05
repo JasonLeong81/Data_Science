@@ -1,0 +1,40 @@
+### Git (TWT) #######################################
+# A branch is a copy of a repository at a given time that has different changes.
+
+# mkdir testrepo, cd testrepo, git init, git add <filename>, git status, git commit -m "less than 50 words",
+# change something in file, git add . , git commit -m "added another file"
+
+# git checkout -b <name of new branch>, git add . , git commit -m "added file to new branch"
+# git checkout <master> # go back to master branch and see that the file is not changed
+# git merge master # change something in the file in master but not in new and that change will not be in the new branch. To bring all the changes to new, we merge them.
+# to resolve for merge conflicts, simply delete ===,<<<,>>> and other things that is not needed and then add and commit again.
+
+# git remote add origin https://github.com/Leongjason/Testrepo.git # make sure that you're in master branch
+# git push -u origin master # -u means save these settings, that is, next time we just type git push
+# username, password = leongjason822@gmail.com, 378100Yc
+# git config -- global user.name "jason" # the name by which people see you when you commit
+# git config -- global user.email "leongjason822@gmail.com" # email is required to push
+# git pull origin master
+
+# git push origin New # push new branch, but make sure you are in that branch
+
+### Git (random website) ######################################
+
+# git log # see commits that have been made
+# git log --merge #
+# git diff # see what we've changed
+# git checkout #
+# git reset --abort #
+# git merge --abort # stop merging
+# git reset # remove files in the staging area
+
+
+### Git (CS) #######################################
+
+# git clone <url> <where to clone> # git clone url . where the . means current directory
+# git remote -v
+# git branch -a
+# git branch -d <branch name> # only delete it locally
+# git push origin --delete <branch name> # delete it remotely
+#
+
