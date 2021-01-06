@@ -62,6 +62,8 @@ def resume_page_2():
     plt.annotate(r1.Extra_ID[0] + r1.Extra[0], (0.5,0.50), weight='regular', fontsize=8, alpha=.6,color='white')
     plt.annotate(r1.Extra_ID[1] + r1.Extra[1], (0.5, 0.48), weight='regular', fontsize=8, alpha=.6, color='white')
     plt.annotate(r1.Extra_ID[2] + r1.Extra[2], (0.5, 0.46), weight='regular', fontsize=8, alpha=.6, color='white')
+    plt.annotate(r1.Extra_ID[3] + r1.Extra[3], (0.5, 0.44), weight='regular', fontsize=8, alpha=.6, color='white')
+    plt.annotate(r1.Extra_ID[4] + r1.Extra[4], (0.5, 0.42), weight='regular', fontsize=8, alpha=.6, color='white')
 
 
 

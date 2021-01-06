@@ -55,8 +55,8 @@ Contact = ['leongjason3781@gmail.com', '+60123292658', 'missing']
 
 
 Extra_Title = 'Find Me Online'
-Extra_ID = ['GitHub: ','Facebook: ','Instagram: ']
-Extra = ['https://github.com/JasonLeong81','https://www.facebook.com/JasonLeong81/','https://www.instagram.com/Jason_Leong_81/']
+Extra_ID = ['GitHub: ','Facebook: ','Instagram: ','Discord: ','Kaggle: ']
+Extra = ['https://github.com/JasonLeong81','https://www.facebook.com/JasonLeong81/','https://www.instagram.com/Jason_Leong_81/','https://discord.com/users/Jasonn#0350','https://www.kaggle.com/jasonleongchoryew']
 
 
 ### Begin Coding :) ####################################################################################################
