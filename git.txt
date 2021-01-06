@@ -27,7 +27,7 @@
 # git reset --abort #
 # git merge --abort # stop merging
 # git reset # remove files in the staging area
-
+# do git push -u origin master if you change your git usename and do authetication once again
 
 ### Git (CS) #######################################
 
