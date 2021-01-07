@@ -2,8 +2,10 @@ url_for's input is the function not the route
 # with messages??? context managers???
 
 # from Intro import db
-# db.create_all(), from Intro import User, Post , user_1 = User(username='Jason',email='leongjason3781@gmail.com',password='password')
-# db.session.add(user_1), user_2 = User(username='Yean Chee',email='leongjason822@gmail.com',password='password'), db.session.add(user_2), db.session.commit()
+# db.create_all(), from Intro import User, Post
+# user_1 = User(username='Jason',email='leongjason3781@gmail.com',password='password')
+# db.session.add(user_1),
+# user_2 = User(username='Yean Chee',email='leongjason822@gmail.com',password='password'), db.session.add(user_2), db.session.commit()
 # User.query.all(), User.query.all()[0] or User.query.first(), User.query.filter_by(username='Jason').all()
 # User.query.filter_by(username='Jason').first()
 # user = User.query.filter_by(username='Jason').all()
@@ -16,6 +18,6 @@ url_for's input is the function not the route
 # user.posts
 # post = Post.query.first()
 # post, post.user_id
-# post.author # this wasnt in Post model
+# post.author # this wasn't in Post model
 # db.drop_all() # delete all
 #
