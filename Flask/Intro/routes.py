@@ -23,7 +23,8 @@ p = [
 @app.route('/')
 @app.route('/home')
 def home():
-    post = Post.query.all()
+    page = request.args.get('page',1,type=int)
+    post = Post.query.paginate(page=page,per_page=3)
     return render_template('home.html',posts=post)
 
 @app.route('/about')

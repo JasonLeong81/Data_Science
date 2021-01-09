@@ -38,3 +38,13 @@ db.drop_all()
 
 what is enctype='multipart/form-data'
 
+from Intro import Post
+p = Post.query.paginate(per_page=5) # write this in url => "?page=2"
+p.per_page # default is 20
+p.page
+print(i for i in p.items)
+
+
+# stopped at making links to other pages 
+
+
