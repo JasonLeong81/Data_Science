@@ -35,3 +35,6 @@ db.session.add(post_2)
 db.session.commit()
 user.posts
 db.drop_all()
+
+what is enctype='multipart/form-data'
+
