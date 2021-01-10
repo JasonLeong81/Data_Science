@@ -43,8 +43,8 @@ p = Post.query.paginate(per_page=5) # write this in url => "?page=2"
 p.per_page # default is 20
 p.page
 print(i for i in p.items)
+for page in in posts.iter_pages(left_edge=1,right_edge=1,right_current=2,left_current=1): print(page) # none are the ... #
 
 
-# stopped at making links to other pages 
 
 

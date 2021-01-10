@@ -23,8 +23,8 @@ p = [
 @app.route('/')
 @app.route('/home')
 def home():
-    page = request.args.get('page',1,type=int)
-    post = Post.query.paginate(page=page,per_page=3)
+    page = request.args.get('page',1,type=int) # url above
+    post = Post.query.order_by(Post.date_posted.desc()).paginate(page=page,per_page=5)
     return render_template('home.html',posts=post)
 
 @app.route('/about')
@@ -147,6 +147,18 @@ def delete_post(post_id):
     return redirect(url_for('home'))
 
 
+@app.route('/user/<string:username>')
+def user_posts(username):
+    page = request.args.get('page',1,type=int) # url above
+    user = User.query.filter_by(username=username).first_or_404()
+    post = Post.query.filter_by(author=user).\
+        order_by(Post.date_posted.desc()).paginate(page=page,per_page=5)
+    return render_template('user_posts.html',posts=post,user=user)
+
 # set FLASK_APP=run.py # no spaces remember
 # set FLASK_DEBUG=1 # changes reload automatically
 # flask run
+
+
+
+
