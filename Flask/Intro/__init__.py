@@ -65,6 +65,9 @@ def create_app(config_class=Config):
     from Intro.main.routes import main
     app.register_blueprint(main)
 
+    from Intro.errors.handlers import errors
+    app.register_blueprint(errors)
+
     return app
 
 
