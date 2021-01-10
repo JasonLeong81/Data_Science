@@ -8,6 +8,8 @@ import os
 from PIL import Image
 from flask_mail import Message
 
+
+
 p = [
     {'author':'Jason Leong',
      'title':'Blog Post 1',
@@ -35,7 +37,7 @@ def about():
 @app.route('/register',methods=['GET','POST'])
 def register():
     if current_user.is_authenticated:
-        return redirect(url_for('home'))
+        return redirect(url_for('main.home'))
     form = RegistrationForm()
     if form.validate_on_submit(): # nothing is wrong or no errors
         hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
@@ -44,13 +46,13 @@ def register():
         db.session.commit()
         # password = bcrypt.check_password_hash(h,'')
         flash('You account has been created! You are now able to login.',category='success')
-        return redirect(url_for('login')) # function not route, remember!
+        return redirect(url_for('users.login')) # function not route, remember!
     return render_template('register.html',title='Register',form=form)
 
 @app.route('/login',methods=['GET','POST'])
 def login():
     if current_user.is_authenticated:
-        return redirect(url_for('home'))
+        return redirect(url_for('main.home'))
     form = LoginForm()
     if form.validate_on_submit():
         user = User.query.filter_by(email=form.email.data).first()
@@ -58,8 +60,8 @@ def login():
             login_user(user,remember=form.remember.data) # a True False value
             next_page = request.args.get('next') # args is a dictionary and we don't use ['next'] becaue this throws an error # get returns None if theres no next
             if next_page:
-                return redirect(url_for(next_page.strip('/')))
-            return redirect(url_for('home'))
+                return redirect(users.next_page.strip('/'))
+            return redirect(url_for('main.home'))
         else:
             flash('Login unsuccessful. Please check email and password.','danger')
     return render_template('login.html',title='Login',form=form)
@@ -67,7 +69,7 @@ def login():
 @app.route("/logout")
 def logout():
     logout_user() # no need inputs because it knows what user is logged in
-    return redirect(url_for('home'))
+    return redirect(url_for('main.home'))
 
 def save_picture(form_picture):
     # saving random values into static so that we don't have the same name
@@ -94,7 +96,7 @@ def account():
         current_user.email = form.email.data
         db.session.commit()
         flash('Account Updated','success')
-        return redirect(url_for('account'))
+        return redirect(url_for('users.account'))
     elif request.method == 'GET':
         form.username.data = current_user.username
         form.email.data = current_user.email
@@ -110,7 +112,7 @@ def new_post():
         db.session.add(post)
         db.session.commit()
         flash('Your post has been created!','success')
-        return redirect(url_for('home'))
+        return redirect(url_for('main.home'))
     return render_template('create_post.html',title='New Post',form=form,legend='New Post')
 
 @app.route("/post/<int:post_id>")
@@ -130,7 +132,7 @@ def update_post(post_id):
         post.content = form.content.data
         db.session.commit() # no need to session.add because post.title and post.content is already in the database
         flash('Your post has been updated!','success')
-        return redirect(url_for('post',post_id=post.id))
+        return redirect(url_for('posts.post',post_id=post.id))
     if request.method == 'GET':
         form.title.data = post.title
         form.content.data = post.content
@@ -145,7 +147,7 @@ def delete_post(post_id):
     db.session.delete(post)
     db.session.commit()
     flash('Your post has been deleted!', 'success')
-    return redirect(url_for('home'))
+    return redirect(url_for('main.home'))
 
 
 @app.route('/user/<string:username>')
@@ -161,7 +163,7 @@ def send_reset_email(user):
     token = user.get_reset_token()
     msg = Message('Password Reset Request',sender='leongjason822@gmail.com',recipients=[user.email])
     msg.body = f''' To reset your password, visit the following link: 
-{url_for('reset_token',token=token,_external=True)}
+{url_for('users.reset_token',token=token,_external=True)}
 If you did not make this request, please ignore this email.
 '''
     mail.send(msg)
@@ -169,30 +171,30 @@ If you did not make this request, please ignore this email.
 @app.route("/reset_password",methods=['GET','POST'])
 def reset_request():
     if current_user.is_authenticated:
-        return redirect(url_for('home'))
+        return redirect(url_for('main.home'))
     form = RequestResetForm()
     if form.validate_on_submit():
         user = User.query.filter_by(email=form.email.data).first()
         send_reset_email(user)
         flash('An email has been sent with instructions to reset your password.', 'info')
-        return redirect(url_for('login'))
+        return redirect(url_for('users.login'))
     return render_template('reset_requests.html', title='Reset Password', form=form)
 
 @app.route("/reset_password/<token>",methods=['GET','POST'])
 def reset_token(token):
     if current_user.is_authenticated:
-        return redirect(url_for('home'))
+        return redirect(url_for('main.home'))
     user = User.verify_reset_token(token)
     if user is None: # or if not user
         flash('That is an invalid or expired token.','warning')
-        return redirect(url_for('reset_request'))
+        return redirect(url_for('users.reset_request'))
     form = ResetPasswordForm()
     if form.validate_on_submit():
         hashed_password = bcrypt.generate_password_hash(form.password.data).decode('utf-8')
         user.password = hashed_password
         db.session.commit()
         flash('Your password has been updated! You are now able to login.',category='success')
-        return redirect(url_for('login'))
+        return redirect(url_for('users.login'))
     return render_template('reset_token.html',form=form,title='Reset Password')
 
 

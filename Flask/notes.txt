@@ -53,5 +53,6 @@ s.loads(token) # wait for 30 seconds and do it again
 pip install flask-mail
 _external = True to get absolute url rather than relative url
 
+blueprints and url_for
 
 
