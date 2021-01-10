@@ -45,6 +45,13 @@ p.page
 print(i for i in p.items)
 for page in in posts.iter_pages(left_edge=1,right_edge=1,right_current=2,left_current=1): print(page) # none are the ... #
 
+from itsdangerous import TimedJSONWebSignatureSerializer as S
+s = S('secret',30)
+token = s.dumps({'user_id':1}).decode('utf-8')
+token
+s.loads(token) # wait for 30 seconds and do it again
+pip install flask-mail
+_external = True to get absolute url rather than relative url
 
 
 
