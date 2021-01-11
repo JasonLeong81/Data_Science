@@ -58,5 +58,8 @@ blueprints and url_for
 ###############################################
 heroku...pip install gunicorn...touch Procfile...web: gunicorn app:run
 pip freeze > requirements.txt
-
+heroku login
+heroku create
+heroku apps:destroy <appname> # max is 5 apps
+cat requirements # to see whats inside 
 
