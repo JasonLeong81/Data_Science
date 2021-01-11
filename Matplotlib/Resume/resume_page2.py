@@ -3,8 +3,8 @@ from pylab import rcParams
 import resume_page1 as r1
 
 Strength_Title = 'STRENGTHS'
-Strengths = ['1','2','3']
-Strength_Descriptions = [['11','12'],['21','22'],['31','32']]
+Strengths = ['Written and Verbal Communication','Team Building','Committed to Lifelong Learning']
+Strength_Descriptions = [['Vice-president of KDU Debate Association in 2018-2019 and participated in numerous debate tournaments such as KDU Pro-Ams and xxx.','House Captain and Deputy Head Prefect in 2015-2017. Organising and being the MC for many events such as Pi Day, Sports Day, and Interview of new prefects recruits.'],['Participated in continuous meetings during previous internships for the development and enrichment of different skills in our groups.','Received training from seniors at work about teaching methods and new Math concepts, and providing similar training to new colleagues.'],['Always seeking for explanations and logic for how things are done. For example, metaclasses are class of class and what about things that are higher than metaclasses?','Main reason for why I chose to study Cognitive Science and AI rather than Computer Science and AI.']]
 
 Hobby_Title = 'HOBBIES'
 Hobbies = ['Badminton','Basketball','Chess','Coding','Travelling','Stamp Collection']
@@ -19,8 +19,6 @@ def resume_page_2():
     plt.annotate(r1.Languages[1], (0.02,0.88), weight='regular', fontsize=8, alpha=.6,color='white')
     plt.annotate('- ', (0,0.86), weight='regular', fontsize=8, alpha=.6,color='white')
     plt.annotate(r1.Languages[2], (0.02,0.86), weight='regular', fontsize=8, alpha=.6,color='white')
-    plt.annotate('- ', (0,0.84), weight='regular', fontsize=8, alpha=.6,color='white')
-    plt.annotate(r1.Languages[3], (0.02,0.84), weight='regular', fontsize=8, alpha=.6,color='white')
 
     # Strengths
     plt.annotate(Strength_Title, (0.5,0.95), weight='bold', fontsize=12, alpha=.6,color='white')

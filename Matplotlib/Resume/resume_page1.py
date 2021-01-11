@@ -14,40 +14,40 @@ Experience_title = 'EXPERIENCE'
 
 Job_1_company_name = 'Mathnasium'
 Job_1_position = 'Mathematics tutor'
-Job_1_responsibilities = ['11', '12', '13']
+Job_1_responsibilities = ['Provide explanation and visualization about Math concepts such as: Linear programming, Probability distributions, differentiation, and Introduction to Linear Algebra.','Supervise two to three students for a 90 minute session on their respective work including school assignments and contest preperation.', "Write and review students' monthly reports and execute plans and tutoring for improvements.", "Perform other duties and tasks as assigned such as moving all students' information to another website and re-creating study plans for most students due to technical issues.","Participate in meetings where we discussed about potentially successful teaching methods that we tried on students, students' progress and problems, and any special requests from students or parents."]
 Job_1_duration = 'duration'
 
 Job_2_company_name = "Global Math"
 Job_2_position = "Speed counting and abacus tutor"
-Job_2_responsibilities = ['21', '22', '23']
+Job_2_responsibilities = ['Teach children who span the age of 6-12 on speed counting and the use of abacus for basic Math operations.', "Grade students's weekly assignments and analyse what the problem was that resulted in an error, if there was any.", "Engage in discussion with my supervisor as to how we can improve a student's skill on a daily basis."]
 Job_2_duration = 'duration'
 
 Job_3_company_name = 'Flow'
 Job_3_position = 'Python tutor'
-Job_3_responsibilities = ['31', '32', '33']
+Job_3_responsibilities = ["Provide help to the first year students in my university in their Introduction to Python course by explaining concepts such as: dictionaries, sets, recursion, as well as the os and random module.", "For stronger students, I would introduce new topics based on what they have learned. Some of these are: linked list, OOP, searching and sorting, and the analysis of time and space complexity for basic functions.", "Encourage them to read the documentation or turn to stack overflow whenever there is doubts."]
 Job_3_duration = 'duration'
 
 Skills_Title = 'SKILLS'
-Skills = ["pyton", "flask", "pandas", "numpy", "matplotlib", "beautifulsoup", "netlogo", "git", "sql", "C++"]
+Skills = ["Python", "Flask", "Pandas", "Numpy", "Matplotlib", "Beautifulsoup", "Netlogo", "Git", "SQL", "Basic HTML/CSS"]
 
 Languages_Title = 'LANGUAGES'
-Languages = ["English", "Chinese", "Cantonese", "basic Malay"]
+Languages = ["English", "Chinese", "Cantonese"]
 
 Achivement_Title = 'ACHIVEMENT'
 Achivements = ['A level Mathematics Competition']
-A_Description = ['Represented Asia Pacific International School in the Mathematics Competition at district level.',
-                 'Advanced to the national level of the competition after winning the district level.']
+A_Description = ['Represented Asia Pacific International School in the Advanced-Level Mathematics Competition at district round.',
+                 'Advanced to the national round of the competition after winning the district round.']
 
 Education_Title = 'EDUCATION'
-Education = ['BS (Hons) Cognitive Science and Artificial Intelligence (CSAI)']
+Education = ['BSc Cognitive Science and Artificial Intelligence (CSAI)']
 University = ['Tilburg University']
 Education_Duration = ['2019-present']
-E_Description = ['Currently at the end of my 2nd year study at Tilburg University.', 'Overall grade so far : 8/10']
+E_Description = ['Currently at the end of my 2nd year study at Tilburg University.', 'Overall Grade so far : 8/10']
 
 Projects_Title = 'PROJECTS'
-Project_Names = ['1', '2', '3']
+Project_Names = ['Data Science Project', 'Badminton Court Booking Website', 'Web-Scraping of Covid-19 cases in every state of Malaysia.']
 Project_Links = ['link', 'link', 'link']
-Project_Descriptions = [['1', '2', '3'], ['1', '2', '3'], ['1', '2', '3']]
+Project_Descriptions = [["xxx", "Tools: Pandas, ", "xxx"], ['Built a website using Flask for a Badminton Court so that people can reserve a court online rather than the traditional way of calling to the place and hoping that someone would pick up.', 'Tools: Bootstrap, sqlalchemy, html/css, ', 'Currently testing some Machine Learning models that would charge different prices to maximise revenue while maintaining user satisfaction.'], ['Used Beautifulsoup to scrap all the cases of Covid-19 in my home country.', 'Users have the option to filter the results based on states and order.', 'Used the QuickSort algorithm for sorting and the datetime module for filtering as ways to improve time and space complexity.']]
 
 Contact_Title = 'Contact Me'
 Contact_ID = ['Email: ', 'Phone: ', 'LinkedIN: ']
