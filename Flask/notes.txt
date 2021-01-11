@@ -55,4 +55,8 @@ _external = True to get absolute url rather than relative url
 
 blueprints and url_for
 
+###############################################
+heroku...pip install gunicorn...touch Procfile...web: gunicorn app:run
+pip freeze > requirements.txt
+
 
