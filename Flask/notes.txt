@@ -61,5 +61,5 @@ pip freeze > requirements.txt
 heroku login
 heroku create
 heroku apps:destroy <appname> # max is 5 apps
-cat requirements # to see whats inside 
+cat requirements # to see whats inside
 
