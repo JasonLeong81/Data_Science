@@ -10,6 +10,9 @@ ax.add_artist(ab)
 fig.set_facecolor('grey')
 ax.set_facecolor('grey')
 # plt.savefig('resumeexample.png', dpi=300, bbox_inches='tight')
-plt.show()
+# plt.show()
 
 # In digital signal processing, spatial anti-aliasing is a technique for minimizing the distortion artifacts known as aliasing when representing a high-resolution image at a lower resolution.
+
+
+
