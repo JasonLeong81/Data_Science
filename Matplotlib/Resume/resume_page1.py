@@ -72,8 +72,13 @@ def resume_page_1():
     plt.annotate(My_Role, (0,0.90), weight='regular', fontsize=8, alpha=.6,color='blue')
 
     # Picture
-
-
+    from matplotlib.offsetbox import TextArea, DrawingArea, OffsetImage, AnnotationBbox
+    import matplotlib.image as mpimg
+    # fig, ax = plt.subplots()
+    arr_code = mpimg.imread('rtest.jpg')
+    imagebox = OffsetImage(arr_code)
+    ab = AnnotationBbox(imagebox, (0.7, 1))  # middle of picture
+    ax.add_artist(ab)
 
     # Experience
 
