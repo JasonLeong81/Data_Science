@@ -13,6 +13,9 @@ def resume_page_2():
 
     # Languages
     plt.annotate(r1.Languages_Title, (0,0.95), weight='bold', fontsize=12, alpha=.6,color='white')
+
+    plt.axhline(y=.945, xmin=r1.x_line_width_left_min, xmax=r1.x_line_width_left_max, color='black', linewidth=1)
+
     plt.annotate('- ', (0,0.90), weight='regular', fontsize=8, alpha=.6,color='white')
     plt.annotate(r1.Languages[0], (0.01,0.90), weight='regular', fontsize=8, alpha=.6,color='white')
     plt.annotate('- ', (0,0.88), weight='regular', fontsize=8, alpha=.6,color='white')
@@ -22,6 +25,9 @@ def resume_page_2():
 
     # Strengths
     plt.annotate(Strength_Title, (0.5,0.95), weight='bold', fontsize=12, alpha=.6,color='white')
+
+    plt.axhline(y=.945, xmin=r1.x_line_width_right_min, xmax=r1.x_line_width_right_max, color='black', linewidth=1)
+
     plt.annotate('-', (0.5, 0.90), weight='regular', fontsize=8, alpha=.6, color='white')
     plt.annotate(Strengths[0], (0.51, 0.90), weight='regular', fontsize=8, alpha=.6, color='white')
     plt.annotate('-', (0.5, 0.87), weight='regular', fontsize=8, alpha=.6, color='white')
@@ -31,6 +37,9 @@ def resume_page_2():
 
     # Hobbies
     plt.annotate(Hobby_Title, (0,0.81), weight='bold', fontsize=12, alpha=.6,color='white')
+
+    plt.axhline(y=.805, xmin=r1.x_line_width_left_min, xmax=r1.x_line_width_left_max, color='black', linewidth=1)
+
     plt.annotate('- ', (0, 0.76), weight='regular', fontsize=8, alpha=.6, color='white')
     plt.annotate(Hobbies[0], (0.01,0.76), weight='regular', fontsize=8, alpha=.6,color='white')
     plt.annotate('- ', (0, 0.74), weight='regular', fontsize=8, alpha=.6, color='white')
@@ -46,6 +55,9 @@ def resume_page_2():
 
     # Extra
     plt.annotate(r1.Extra_Title, (0.5,0.79), weight='bold', fontsize=12, alpha=.6,color='white')
+
+    plt.axhline(y=.785, xmin=r1.x_line_width_right_min, xmax=r1.x_line_width_right_max, color='black', linewidth=1)
+
     plt.annotate(u'\u2022', (0.5,0.74), weight='regular', fontsize=8, alpha=.6,color='white')
     plt.annotate(r1.Extra_ID[0] + r1.Extra[0], (0.51,0.74), weight='regular', fontsize=8, alpha=.6,color='white')
     plt.annotate(u'\u2022', (0.5,0.72), weight='regular', fontsize=8, alpha=.6,color='white')
@@ -59,6 +71,9 @@ def resume_page_2():
 
     # Contacts
     plt.annotate(r1.Contact_Title, (0,0.61), weight='bold', fontsize=12, alpha=.6,color='white')
+
+    plt.axhline(y=.605, xmin=r1.x_line_width_left_min, xmax=r1.x_line_width_left_max, color='black', linewidth=1)
+
     plt.annotate(u'\u2022', (0,0.56), weight='regular', fontsize=8, alpha=.6,color='white')
     plt.annotate(r1.Contact_ID[0] + r1.Contact[0], (0.01,0.56), weight='regular', fontsize=8, alpha=.6,color='white')
     plt.annotate(u'\u2022', (0, 0.54), weight='regular', fontsize=8, alpha=.6, color='white')

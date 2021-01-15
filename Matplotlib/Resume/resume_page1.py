@@ -7,7 +7,7 @@ fig, ax = plt.subplots(nrows=1, ncols=1)
 fig.patch.set_facecolor('#808080')
 ax.set_facecolor('black')
 
-Name = 'JASON LEONG'
+Name = 'JASON LEONG Chor Yew'
 My_Role = 'Student in Cognitive Science and Artificial Intelligence'
 
 Experience_title = 'EXPERIENCE'
@@ -58,6 +58,10 @@ Extra_Title = 'Find Me Online'
 Extra_ID = ['GitHub: ','Facebook: ','Instagram: ','Discord: ','Kaggle: ']
 Extra = ['https://github.com/JasonLeong81','https://www.facebook.com/JasonLeong81/','https://www.instagram.com/Jason_Leong_81/','https://discord.com/users/Jasonn#0350','https://www.kaggle.com/jasonleongchoryew']
 
+x_line_width_right_min = 0.5
+x_line_width_right_max = 0.9
+x_line_width_left_min = 0
+x_line_width_left_max = 0.45
 
 ### Begin Coding :) ####################################################################################################
 
@@ -75,8 +79,10 @@ def resume_page_1():
 
     plt.annotate(Experience_title , (0,0.80), weight='bold', fontsize=12, alpha=.6,color='white')
 
+    plt.axhline(y=.795, xmin=x_line_width_left_min, xmax=x_line_width_left_max, color='black', linewidth=1)
+
     plt.annotate(Job_3_position , (0,0.75), weight='regular', fontsize=10, alpha=.6,color='white')
-    plt.annotate(Job_3_company_name , (0,0.73), weight='regular', fontsize=8, alpha=.6,color='white')
+    plt.annotate(Job_3_company_name , (0,0.73), weight='regular', fontsize=8, alpha=.6,color='blue')
     plt.annotate(Job_3_duration , (0,0.71), weight='regular', fontsize=8, alpha=.6,color='white')
     plt.annotate('-' , (0,0.69), weight='regular', fontsize=8, alpha=.6,color='white')
     plt.annotate(Job_3_responsibilities[0][0] , (0.01,0.69), weight='regular', fontsize=8, alpha=.6,color='white')
@@ -88,7 +94,7 @@ def resume_page_1():
     plt.annotate(Job_3_responsibilities[2][0] , (0.01,0.61), weight='regular', fontsize=8, alpha=.6,color='white')
 
     plt.annotate(Job_1_position , (0,0.56), weight='regular', fontsize=10, alpha=.6,color='white')
-    plt.annotate(Job_1_company_name , (0,0.54), weight='regular', fontsize=8, alpha=.6,color='white')
+    plt.annotate(Job_1_company_name , (0,0.54), weight='regular', fontsize=8, alpha=.6,color='blue')
     plt.annotate(Job_1_duration , (0,0.52), weight='regular', fontsize=8, alpha=.6,color='white')
     plt.annotate('-' , (0,0.50), weight='regular', fontsize=8, alpha=.6,color='white')
     plt.annotate(Job_1_responsibilities[0][0] , (0.01,0.50), weight='regular', fontsize=8, alpha=.6,color='white')
@@ -103,7 +109,7 @@ def resume_page_1():
     plt.annotate(Job_1_responsibilities[3][1], (0.01, 0.38), weight='regular', fontsize=8, alpha=.6, color='white')
 
     plt.annotate(Job_2_position , (0,0.33), weight='regular', fontsize=10, alpha=.6,color='white')
-    plt.annotate(Job_2_company_name , (0,0.31), weight='regular', fontsize=8, alpha=.6,color='white')
+    plt.annotate(Job_2_company_name , (0,0.31), weight='regular', fontsize=8, alpha=.6,color='blue')
     plt.annotate(Job_2_duration , (0,0.29), weight='regular', fontsize=8, alpha=.6,color='white')
     plt.annotate('-' , (0,0.27), weight='regular', fontsize=8, alpha=.6,color='white')
     plt.annotate(Job_2_responsibilities[0] , (0.01,0.27), weight='regular', fontsize=8, alpha=.6,color='white')
@@ -115,8 +121,11 @@ def resume_page_1():
     # Education
 
     plt.annotate(Education_Title, (0.5,0.80), weight='bold', fontsize=12, alpha=.6,color='white')
+
+    plt.axhline(y=.795, xmin=x_line_width_right_min, xmax=x_line_width_right_max, color='black', linewidth=1)
+
     plt.annotate(Education[0], (0.5,0.75), weight='regular', fontsize=10, alpha=.6,color='white')
-    plt.annotate(University[0] , (0.5,0.73), weight='regular', fontsize=8, alpha=.6,color='white')
+    plt.annotate(University[0] , (0.5,0.73), weight='regular', fontsize=8, alpha=.6,color='blue')
     plt.annotate(Education_Duration[0] , (0.5,0.71), weight='regular', fontsize=8, alpha=.6,color='white')
     plt.annotate('- ' , (0.5,0.69), weight='regular', fontsize=8, alpha=.6,color='white')
     plt.annotate(E_Description[0] , (0.51,0.69), weight='regular', fontsize=8, alpha=.6,color='white')
@@ -126,6 +135,9 @@ def resume_page_1():
     # Achivement
 
     plt.annotate(Achivement_Title , (0.5,0.62), weight='bold', fontsize=12, alpha=.6,color='white')
+
+    plt.axhline(y=.615, xmin=x_line_width_right_min, xmax=x_line_width_right_max, color='black', linewidth=1)
+
     plt.annotate(Achivements[0] , (0.5,0.57), weight='regular', fontsize=10, alpha=.6,color='white')
     plt.annotate("- " , (0.5,0.55), weight='regular', fontsize=12, alpha=.6,color='white')
     plt.annotate(A_Description[0][0] , (0.51,0.55), weight='regular', fontsize=8, alpha=.6,color='white')
@@ -138,8 +150,10 @@ def resume_page_1():
 
     plt.annotate(Projects_Title , (0.5,0.44), weight='bold', fontsize=12, alpha=.6,color='white')
 
+    plt.axhline(y=.430, xmin=x_line_width_right_min, xmax=x_line_width_right_max, color='black', linewidth=1)
+
     plt.annotate(Project_Names[0] , (0.5,0.39), weight='bold', fontsize=10, alpha=.6,color='white')
-    plt.annotate(Project_Links[0] , (0.5,0.37), weight='regular', fontsize=8, alpha=.6,color='white')
+    plt.annotate(Project_Links[0] , (0.5,0.37), weight='regular', fontsize=8, alpha=.6,color='blue')
     plt.annotate( '-', (0.5,0.35), weight='regular', fontsize=8, alpha=.6,color='white')
     plt.annotate(Project_Descriptions[0][0] , (0.51,0.35), weight='regular', fontsize=8, alpha=.6,color='white')
     plt.annotate('-' , (0.5,0.33), weight='regular', fontsize=8, alpha=.6,color='white')
@@ -148,7 +162,7 @@ def resume_page_1():
     plt.annotate(Project_Descriptions[0][2] , (0.51,0.31), weight='regular', fontsize=8, alpha=.6,color='white')
 
     plt.annotate(Project_Names[1] , (0.5,0.26), weight='bold', fontsize=10, alpha=.6,color='white')
-    plt.annotate(Project_Links[1] , (0.5,0.24), weight='regular', fontsize=8, alpha=.6,color='white')
+    plt.annotate(Project_Links[1] , (0.5,0.24), weight='regular', fontsize=8, alpha=.6,color='blue')
     plt.annotate( '-', (0.5,0.22), weight='regular', fontsize=8, alpha=.6,color='white')
     plt.annotate(Project_Descriptions[1][0][0] , (0.51,0.22), weight='regular', fontsize=8, alpha=.6,color='white')
     plt.annotate(Project_Descriptions[1][0][1], (0.51, 0.20), weight='regular', fontsize=8, alpha=.6, color='white')
@@ -160,7 +174,7 @@ def resume_page_1():
 
 
     plt.annotate(Project_Names[2] , (0.5,0.09), weight='bold', fontsize=10, alpha=.6,color='white')
-    plt.annotate(Project_Links[2] , (0.5,0.07), weight='regular', fontsize=8, alpha=.6,color='white')
+    plt.annotate(Project_Links[2] , (0.5,0.07), weight='regular', fontsize=8, alpha=.6,color='blue')
     plt.annotate( '-', (0.5,0.05), weight='regular', fontsize=8, alpha=.6,color='white')
     plt.annotate(Project_Descriptions[2][0] , (0.51,0.05), weight='regular', fontsize=8, alpha=.6,color='white')
     plt.annotate('-' , (0.5,0.03), weight='regular', fontsize=8, alpha=.6,color='white')
@@ -169,6 +183,9 @@ def resume_page_1():
     # Skills
 
     plt.annotate(Skills_Title , (0,0.18), weight='bold', fontsize=12, alpha=.6,color='white')
+
+    plt.axhline(y=.175, xmin=x_line_width_left_min, xmax=x_line_width_left_max, color='black', linewidth=1)
+
     c = 0.13
     for i in range(5):
         plt.annotate('- ', (0,c), weight='regular', fontsize=8, alpha=.6,color='white')
