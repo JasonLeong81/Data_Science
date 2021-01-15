@@ -51,7 +51,7 @@ Project_Descriptions = [["xxx", "Tools: Pandas, ", "xxx"], ['Built a website usi
 
 Contact_Title = 'Contact Me'
 Contact_ID = ['Email: ', 'Phone: ', 'LinkedIN: ']
-Contact = ['leongjason3781@gmail.com', '+60123292658', 'missing']
+Contact = ['leongjason3781@gmail.com', '+60123292658', 'https://www.linkedin.com/in/jason-leong-65333a196/']
 
 
 Extra_Title = 'Find Me Online'
