@@ -7,8 +7,8 @@ fig, ax = plt.subplots(nrows=1, ncols=1)
 fig.patch.set_facecolor('#808080')
 ax.set_facecolor('black')
 
-Name = 'JASON LEONG Chor Yew'
-My_Role = 'Student in Cognitive Science and Artificial Intelligence'
+Name = 'JASON LEONG'
+My_Role = ['Student in Cognitive Science and','Artificial Intelligence']
 
 Experience_title = 'EXPERIENCE'
 
@@ -69,7 +69,8 @@ def resume_page_1():
     # Introduction
 
     plt.annotate(Name, (0,0.95), weight='regular', fontsize=18, alpha=.6,color='white')
-    plt.annotate(My_Role, (0,0.90), weight='regular', fontsize=8, alpha=.6,color='blue')
+    plt.annotate(My_Role[0], (0,0.90), weight='regular', fontsize=8, alpha=.6,color='blue')
+    plt.annotate(My_Role[1], (0,0.88), weight='regular', fontsize=8, alpha=.6,color='blue')
 
     # Picture
     from matplotlib.offsetbox import TextArea, DrawingArea, OffsetImage, AnnotationBbox

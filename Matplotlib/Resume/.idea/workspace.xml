@@ -14,7 +14,7 @@
   <component name="ProjectId" id="1n6EdEmxs3YHOVWz9cbAEhvOfmW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Neural_Network_TWT" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunDashboard">
@@ -29,7 +29,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.resume_page1">
+  <component name="RunManager" selected="Python.resume_page2">
     <configuration name="resume_page1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Resume" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -95,9 +95,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.resume_page2" />
         <item itemvalue="Python.resume_page1" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.resume_page2" />
       </list>
     </recent_temporary>
   </component>
