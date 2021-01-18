@@ -47,7 +47,7 @@ E_Description = ['Currently at the end of my 2nd year study at Tilburg Universit
 Projects_Title = 'PROJECTS'
 Project_Names = ['Data Science Project', 'Badminton Court Booking Website', 'Web-Scraping of Covid-19 cases in every state of Malaysia']
 Project_Links = ['link', 'link', 'link']
-Project_Descriptions = [["xxx", "Tools: Pandas, ", "xxx"], [['Built a website using Flask for a Badminton Court so that people can','reserve a court online instead of calling.'], 'Tools: Bootstrap, sqlalchemy, html/css, ', ['Currently testing some Machine Learning models to maximise revenue','while maintaining user satisfaction.']], ['Used Beautifulsoup to scrap all the cases of Covid-19 in my home country.', 'Users have the option to filter the results based on states and order.']]
+Project_Descriptions = [["xxx", "Tools: Pandas, Flask ", "xxx"], [['Built a website on a development server using Flask','with the goal of reducing the use of phone calls for a reservation.'], 'Tools: Bootstrap, sqlalchemy, html/css, ', ['Currently testing some Machine Learning models to maximise revenue','while maintaining user satisfaction.']], ['Used Beautifulsoup to scrap all the cases of Covid-19 in my home country.', 'Users have the option to filter the results based on states and order.']]
 
 Contact_Title = 'Contact Me'
 Contact_ID = ['Email: ', 'Phone: ', 'LinkedIN: ']
