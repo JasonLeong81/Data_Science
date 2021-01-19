@@ -14,17 +14,28 @@ Experience_title = 'EXPERIENCE'
 
 Job_1_company_name = 'Mathnasium'
 Job_1_position = 'Mathematics Instructor'
-Job_1_responsibilities = [['Provide explanation and visualization about Math concepts such as: Linear programming,','Probability distributions, differentiation, and Introduction to Linear Algebra.'],['Supervise two to three students for a 90 minute session on their respective work including','school assignments and contest preperation.'], "Write and review students' monthly reports and execute plans and tutoring for improvements.", ["Perform other duties and tasks as assigned such as moving all students' information","to another website and re-creating study plans for most students due to technical issues."]]
+Job_1_responsibilities = [['Provide explanation and visualization about Math concepts such as: Linear programming,',
+                           'Probability distributions, differentiation, and Introduction to Linear Algebra.'],
+                          ['Supervise two to three students for a 90 minute session on their respective work including','school assignments and contest preperation.'],
+                          "Write and review students' monthly reports and execute plans and tutoring for improvements.",
+                          ["Perform other duties and tasks as assigned such as moving all students' information",
+                           "to another website and re-creating study plans for most students due to technical issues."]]
 Job_1_duration = '2019-01-01-2019-07-01'
 
 Job_2_company_name = "Global Math"
 Job_2_position = "Speed Counting and Abacus Tutor"
-Job_2_responsibilities = ['Teach children who span the age of 6-12 on speed counting and the use of abacus.', "Grade students's weekly assignments and analyse what the problem was that resulted in an error.", "Engage in discussion with my supervisor as to how we can improve a student's skill on a daily basis."]
+Job_2_responsibilities = ['Teach children who span the age of 6-12 on speed counting and the use of abacus.',
+                          "Grade students's weekly assignments and analyse what the problem was that resulted in an error.",
+                          "Engage in discussion with my supervisor as to how we can improve a student's skill on a daily basis."]
 Job_2_duration = '2016-03-01-2016-06-01'
 
 Job_3_company_name = 'Flow'
 Job_3_position = 'Part-Time Python Tutor'
-Job_3_responsibilities = [["Provide help to the first year students in my university in their Introduction to Python course", "by explaining concepts such as: dictionaries, sets, recursion, as well as the os and random module."], ["For stronger students, I would introduce topics such as linked list, OOP, searching and sorting,", "and the analysis of time and space complexity for basic functions."], ["Encourage them to read the documentation or turn to stack overflow whenever there is doubts."]]
+Job_3_responsibilities = [["Provide help to the first year students in my university in their Introduction to Python course",
+                           "by explaining concepts such as: dictionaries, sets, recursion, as well as the os and random module."],
+                          ["For stronger students, I would introduce topics such as linked list, OOP, searching and sorting,",
+                           "and the analysis of time and space complexity for basic functions."],
+                          ["Encourage them to read the documentation or turn to stack overflow whenever there is doubts."]]
 Job_3_duration = '2020-01-01-Present'
 
 Skills_Title = 'SKILLS'
@@ -47,7 +58,11 @@ E_Description = ['Currently at the end of my 2nd year study at Tilburg Universit
 Projects_Title = 'PROJECTS'
 Project_Names = ['Data Science Project', 'Badminton Court Booking Website', 'Web-Scraping of Covid-19 cases in every state of Malaysia']
 Project_Links = ['link', 'link', 'link']
-Project_Descriptions = [["xxx", "Tools: Pandas, Flask ", "xxx"], [['Built a website on a development server using Flask','with the goal of reducing the use of phone calls for a reservation.'], 'Tools: Bootstrap, sqlalchemy, html/css, ', ['Currently testing some Machine Learning models to maximise revenue','while maintaining user satisfaction.']], ['Used Beautifulsoup to scrap all the cases of Covid-19 in my home country.', 'Users have the option to filter the results based on states and order.']]
+Project_Descriptions = [["xxx", "Tools: Pandas, Flask ", "xxx"], [['Built a website on a development server using Flask',
+                    'with the goal of reducing the use of phone calls for a reservation.'], 'Tools: Bootstrap, sqlalchemy, html/css, ',
+                  ['Currently testing some Machine Learning models to maximise revenue','while maintaining user satisfaction.']],
+                    ['Used Beautifulsoup to scrap all the cases of Covid-19 in my home country.',
+                     'Users have the option to filter the results based on states and order.']]
 
 Contact_Title = 'Contact Me'
 Contact_ID = ['Email: ', 'Phone: ', 'LinkedIN: ']
@@ -56,13 +71,15 @@ Contact = ['leongjason3781@gmail.com', '+60123292658', 'https://www.linkedin.com
 
 Extra_Title = 'Find Me Online'
 Extra_ID = ['GitHub: ','Facebook: ','Instagram: ','Discord: ','Kaggle: ']
-Extra = ['https://github.com/JasonLeong81','https://www.facebook.com/JasonLeong81/','https://www.instagram.com/Jason_Leong_81/','https://discord.com/users/Jasonn#0350','https://www.kaggle.com/jasonleongchoryew']
+Extra = ['https://github.com/JasonLeong81','https://www.facebook.com/JasonLeong81/','https://www.instagram.com/Jason_Leong_81/',
+         'https://discord.com/users/Jasonn#0350','https://www.kaggle.com/jasonleongchoryew']
 
 x_line_width_right_min = 0.5
 x_line_width_right_max = 0.9
 x_line_width_left_min = 0
 x_line_width_left_max = 0.45
 
+BREAK = 39
 ### Begin Coding :) ####################################################################################################
 
 def resume_page_1():
@@ -140,17 +157,17 @@ def resume_page_1():
 
     # Achivement
 
-    plt.annotate(Achivement_Title , (0.5,0.62), weight='bold', fontsize=12, alpha=.6,color='white')
-
-    plt.axhline(y=.615, xmin=x_line_width_right_min, xmax=x_line_width_right_max, color='black', linewidth=1)
-
-    plt.annotate(Achivements[0] , (0.5,0.57), weight='regular', fontsize=10, alpha=.6,color='white')
-    plt.annotate("- " , (0.5,0.55), weight='regular', fontsize=12, alpha=.6,color='white')
-    plt.annotate(A_Description[0][0] , (0.51,0.55), weight='regular', fontsize=8, alpha=.6,color='white')
-    plt.annotate(A_Description[0][1] , (0.51,0.53), weight='regular', fontsize=8, alpha=.6,color='white')
-    plt.annotate("- " , (0.5,0.51), weight='regular', fontsize=12, alpha=.6,color='white')
-    plt.annotate(A_Description[1][0] , (0.51,0.51), weight='regular', fontsize=8, alpha=.6,color='white')
-    plt.annotate(A_Description[1][1], (0.51, 0.49), weight='regular', fontsize=8, alpha=.6, color='white')
+    # plt.annotate(Achivement_Title , (0.5,0.62), weight='bold', fontsize=12, alpha=.6,color='white')
+    #
+    # plt.axhline(y=.615, xmin=x_line_width_right_min, xmax=x_line_width_right_max, color='black', linewidth=1)
+    #
+    # plt.annotate(Achivements[0] , (0.5,0.57), weight='regular', fontsize=10, alpha=.6,color='white')
+    # plt.annotate("- " , (0.5,0.55), weight='regular', fontsize=12, alpha=.6,color='white')
+    # plt.annotate(A_Description[0][0] , (0.51,0.55), weight='regular', fontsize=8, alpha=.6,color='white')
+    # plt.annotate(A_Description[0][1] , (0.51,0.53), weight='regular', fontsize=8, alpha=.6,color='white')
+    # plt.annotate("- " , (0.5,0.51), weight='regular', fontsize=12, alpha=.6,color='white')
+    # plt.annotate(A_Description[1][0] , (0.51,0.51), weight='regular', fontsize=8, alpha=.6,color='white')
+    # plt.annotate(A_Description[1][1], (0.51, 0.49), weight='regular', fontsize=8, alpha=.6, color='white')
 
     # Projects
 
